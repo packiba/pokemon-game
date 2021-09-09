@@ -1,8 +1,7 @@
 import './style.css';
 
 const Layout = ({title, descr, urlBg, colorBg}) => {
-    const styleRoot = { background: colorBg || `url(${urlBg})`}
-    console.log(styleRoot);
+    const styleRoot = { background: colorBg || (urlBg ? `url(${urlBg})` : 'none')}
     return (
         <section className="root" style={styleRoot}>
             <div className="wrapper">
