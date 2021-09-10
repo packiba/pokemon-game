@@ -8,10 +8,10 @@ const App = () => {
   
   return (
    <>
-    <Header title='Hello' descr='This is header'/>
-    <Layout urlBg={img1} title='Section 1'/>
-    <Layout colorBg='Red'/>
-    <Layout urlBg={img2} descr='Description 3'/>
+    <Header title='Hello' descr='This is Header'/>
+    <Layout title='Section 1' descr='This is Section 1' urlBg={img1}/>
+    <Layout title='Section 2' descr='This is Section 2' colorBg='Red'/>
+    <Layout title='Section 3' descr='This is Section 3' urlBg={img2}/>
     <Footer/>
    </>
   );
