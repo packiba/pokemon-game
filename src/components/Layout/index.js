@@ -1,6 +1,6 @@
 import './style.css';
 
-const Layout = ({title, descr, urlBg, colorBg}) => {
+const Layout = ({title, urlBg, colorBg, children}) => {
     const styleRoot = { background: colorBg || (urlBg ? `url(${urlBg})` : 'none')}
     return (
         <section className="root" style={styleRoot}>
@@ -11,7 +11,7 @@ const Layout = ({title, descr, urlBg, colorBg}) => {
                         <span className="separator"></span>
                     </div>
                     <div className="desc full">
-                        <p>{descr || 'Layout description'}</p>
+                        {children || 'Layout description'}
                     </div>
                 </article>
             </div>
